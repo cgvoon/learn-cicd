@@ -30,15 +30,10 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-
+  
   cypress-run:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up pnpm
-      - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 7
+      runs-on: ubuntu-latest
+
       - name: E2E on Chrome
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v4
