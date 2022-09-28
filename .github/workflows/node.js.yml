@@ -43,3 +43,9 @@ jobs:
           wait-on: 'http://localhost:3000'
           browser: chrome
           spec: cypress/e2e/homepage.cy.js
+      - name: Take Screenshot If Failed
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
