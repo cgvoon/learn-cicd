@@ -20,16 +20,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'npm'
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
+        run: npm run build
+        
   
   cypress-run:
       name: Cypress run
@@ -41,4 +40,5 @@ jobs:
         - name: Cypress run
           uses: cypress-io/github-action@v4
           with:
+            browser: chrome
             spec: cypress/e2e/homepage.cy.js
