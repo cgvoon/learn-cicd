@@ -4,7 +4,7 @@
 name: Node.js CI
 
 on:
-  push:
+  push: 
     branches: ['main']
   pull_request:
     branches: ['main']
@@ -31,15 +31,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-  cypress-run:      
+  cypress-run:
     runs-on: ubuntu-latest
-      - name: Set up pnpm
+    - name: Set up pnpm
       uses: pnpm/action-setup@v2.0.1
       with:
         version: 7
     
     # let's make sure our tests pass on Chrome browser
-      name: E2E on Chrome
+    - name: E2E on Chrome
       steps:
         - uses: actions/checkout@v2
         - uses: cypress-io/github-action@v4
