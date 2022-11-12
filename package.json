@@ -10,7 +10,8 @@
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
     "e2e": "start-server-and-test start http://localhost:3000 cypress",
-    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless",
+    "release": "release-it"
   },
   "dependencies": {
     "next": "12.3.1",
@@ -21,5 +22,58 @@
     "cypress": "^10.9.0",
     "eslint": "^8.24.0",
     "eslint-config-next": "12.3.1"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "chore",
+              "hidden": true
+            },
+            {
+              "type": "docs",
+              "section": "Documentation"
+            },
+            {
+              "type": "style",
+              "section": "Styles"
+            },
+            {
+              "type": "refactor",
+              "hidden": true
+            },
+            {
+              "type": "perf",
+              "hidden": true
+            },
+            {
+              "type": "test",
+              "hidden": true
+            }
+          ]
+        }
+      }
+    }
   }
 }
