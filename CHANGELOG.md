@@ -1,5 +1,7 @@
 
 
+### [0.4.1](https://github.com/cgvoon/learn-cicd/compare/0.4.0...0.4.1) (2022-11-12)
+
 ## [0.4.0](https://github.com/cgvoon/learn-cicd/compare/0.2.4...0.4.0) (2022-11-12)
 
 
