@@ -11,7 +11,7 @@
     "cypress:headless": "cypress run",
     "e2e": "start-server-and-test start http://localhost:3000 cypress",
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless",
-    "release": "release-it"
+    "release": "dotenv release-it --"
   },
   "dependencies": {
     "next": "12.3.1",
