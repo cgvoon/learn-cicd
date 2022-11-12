@@ -33,7 +33,7 @@
     },
     "github": {
       "release": true,
-      "hostname": "github.com"
+      "host": "github.com"
     },
     "npm": {
       "publish": false
