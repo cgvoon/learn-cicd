@@ -1,5 +1,12 @@
 
 
+### [0.2.4](https://github.com/cgvoon/learn-cicd/compare/0.2.3...0.2.4) (2022-11-12)
+
+
+### Bug Fixes
+
+* host not hostname ([ed325b6](https://github.com/cgvoon/learn-cicd/commit/ed325b6f5104fe3224dd10c6d60fd12c1613f211))
+
 ### [0.2.3](https://github.com/cgvoon/learn-cicd/compare/0.2.2...0.2.3) (2022-11-12)
 
 ### [0.2.2](https://github.com/cgvoon/learn-cicd/compare/0.2.1...0.2.2) (2022-11-12)
