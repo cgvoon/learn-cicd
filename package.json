@@ -29,6 +29,7 @@
   },
   "release-it": {
     "git": {
+      "hostname": "github.com",
       "commitMessage": "chore: release ${version}"
     },
     "github": {
