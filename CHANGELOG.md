@@ -1,5 +1,12 @@
 
 
+### [0.4.2](https://github.com/cgvoon/learn-cicd/compare/0.4.1...0.4.2) (2022-11-12)
+
+
+### Styles
+
+* change background color ([1f6fe3a](https://github.com/cgvoon/learn-cicd/commit/1f6fe3a83ad3bac45077ba677f0f54f281ab1695))
+
 ### [0.4.1](https://github.com/cgvoon/learn-cicd/compare/0.4.0...0.4.1) (2022-11-12)
 
 ## [0.4.0](https://github.com/cgvoon/learn-cicd/compare/0.2.4...0.4.0) (2022-11-12)
