@@ -1,5 +1,18 @@
 
 
+## [0.3.0](https://github.com/cgvoon/learn-cicd/compare/0.2.4...0.3.0) (2022-11-12)
+
+
+### Features
+
+* automated release ([07c88ef](https://github.com/cgvoon/learn-cicd/commit/07c88ef51550242cedf581a55291201cd8651a8f))
+
+
+### Bug Fixes
+
+* add env ([0ee21ea](https://github.com/cgvoon/learn-cicd/commit/0ee21ea9c441b13289f324993aeb064ef2adbd50))
+* env ([439ab72](https://github.com/cgvoon/learn-cicd/commit/439ab72bc85188b35e6dbe3dccd16f0037c4a674))
+
 ### [0.2.4](https://github.com/cgvoon/learn-cicd/compare/0.2.3...0.2.4) (2022-11-12)
 
 
